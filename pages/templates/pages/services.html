@@ -1,0 +1,248 @@
+{% extends 'pages/layouts/baseLayout.html' %}
+{% load static %}
+
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'pages/css/services.css' %}">
+    {% endblock %}
+
+
+
+    {% block content %}
+    <!--#####################################################################################crousel section-->
+    <!--<div id="carousel-sm">
+      <div id="carousel-con">
+        <h1 class="display-1">WELCOME</h1>
+        <p>How do you begin a career or anything at all without fore-knowledge about it!!! That's why where are here.</p>
+        <img src="{% static 'pages/img/biw-logo-full.png' %}">
+        <a class="btn btn-lg btn-primary" href="#" role="button">Know more</a>
+      </div>
+      <img src="{% static 'pages/img/biw-logo-bg.png' %}">
+    </div>-->
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators mb-0 mb-sm-3">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" >
+
+        <div class="carousel-item active">
+
+          <div class="carousel-bg" style="background-image: url({% static 'pages/img/biw-brand-xl.jpg' %}); background-color: #e4eef7; background-repeat: no-repeat;"></div>
+
+          <div class="carousel-caption" >
+            <div class="grid">
+              <div class="we">
+                <h1 class="display-1">WE</h1>
+              </div>
+              <div class="typing">
+                <h2 class="display-4"><span id="typed1"></span><span id="blue-biw" class="text-primary">BIW</span></h2>
+              </div>
+              <div class="paraf pl-2 pr-sm-5">
+                <p class="mr-sm-5">How do you begin a career or anything at all without fore-knowledge about it!!! That's why where are here.</p>
+              </div>
+            </div>
+            <div class="sec-con">
+              <hr>
+              <p>
+                BIW MODEL ACADEMY
+              </p>
+              <a class="btn btn-lg btn-primary" href="#" role="button">Know more</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="carousel-item ">
+
+          <div class="carousel-bg" style="background-image: url({% static 'pages/img/biw-inspiration-grad-xl.png' %}); background-color: #fee9d4; background-repeat: no-repeat;"></div>
+
+          <div class="carousel-caption" >
+            <div class="grid">
+              <div class="we">
+                <h1 class="display-1">WE</h1>
+              </div>
+              <div class="typing">
+                <h2 class="display-4"><span id="typed2" class="pl-3"></span></h2>
+              </div>
+              <div class="paraf pl-2 pr-sm-5">
+                <p class="mr-sm-5">How do you begin a career or anything at all without fore-knowledge about it!!! That's why where are here.</p>
+              </div>
+            </div>
+            <div class="sec-con">
+              <hr>
+              <p>
+                BIW MODEL ACADEMY
+              </p>
+              <a class="btn btn-lg btn-primary" href="#" role="button">Know more</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="carousel-item ">
+
+          <div class="carousel-bg" style="background-image: url({% static 'pages/img/biw-illumination-xxl.jpg' %});"></div>
+
+          <div class="carousel-caption" >
+            <div class="grid">
+              <div class="we">
+                <h1 class="display-1">WE</h1>
+              </div>
+              <div class="typing">
+                <h2 class="display-4"><span id="typed3" class="pl-3"></span></h2>
+              </div>
+              <div class="paraf pl-2 pr-sm-5">
+                <p class="mr-sm-5">How do you begin a career or anything at all without fore-knowledge about it!!! That's why where are here.</p>
+              </div>
+            </div>
+            <div class="sec-con">
+              <hr>
+              <p>
+                BIW MODEL ACADEMY
+              </p>
+              <a class="btn btn-lg btn-primary" href="#" role="button">Know more</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="carousel-item ">
+
+          <div class="carousel-bg" style="background-image: url({% static 'pages/img/biw-creativity-xxl.jpg' %});"></div>
+
+          <div class="carousel-caption" >
+            <div class="grid">
+              <div class="we">
+                <h1 class="display-1" style="color: #fff;">WE</h1>
+              </div>
+              <div class="typing">
+                <h2 class="display-4" style="color: #000; font-weight: 400;"><span id="typed4" class="pl-3"></span></h2>
+              </div>
+              <div class="paraf pl-2 pr-sm-5">
+                <p class="mr-sm-5" style="color: #fff; font-weight: 500; background-color: rgba(0, 0, 0, 0.5);">How do you begin a career or anything at all without fore-knowledge about it!!! That's why where are here.</p>
+              </div>
+            </div>
+            <div class="sec-con">
+              <hr>
+              <p style="color: #fff; background-color: rgba(0, 0, 0, 0.5); width: 300px;">
+                BIW MODEL ACADEMY
+              </p>
+              <a class="btn btn-lg btn-primary" href="#" role="button">Know more</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!--###########################################################################navbar2 section-->
+    <nav id="nav-2" class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark border-0">
+      <a class="navbar-brand pr-sm-5 mr-sm-5" href="#">Listen to BIW Newsletter</a>
+
+
+      <div class="show " id="subscribe">
+
+        {% if form.errors.email %}
+          {% for error in form.errors.email %}
+          <p class="font-weight-normal text-monospace h6" style="color: #efb60e">{{ error }}</p>
+          {% endfor %}
+        {% endif %}
+        {% if err %}
+        <p class="font-weight-normal text-monospace h6" style="color: #efb60e">{{ err }}</p>
+        {% endif %}
+
+        <form class="form-inline mb-2" method="POST">
+          {% csrf_token %}
+          <input class="form-control mt-1" type="email" name="email" id="id_email" placeholder="Email" value="" required>
+          <button class="btn btn-outline-success mt-1" type="submit">Subcribe</button>
+        </form>
+
+      </div>
+    </nav>
+    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+    <!--###########################################################################################Cards Section-->
+    <div class="card-deck">
+      <div class="card wow">
+        <div id="card-img-header" class="rounded-top">
+          <img src="{% static 'pages/img/boot.png' %}" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">BOOT CAMP</h5>
+          <p class="card-text text-center">The boot camp is a combination of catwalk training, photo shoots, and interviews models will have with a panel of industry influencers. Think Next Top Model with more catwalk, and less cat fight.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card wow">
+        <div id="card-img-header" class="rounded-top">
+          <img src="{% static 'pages/img/academy.png' %}" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">ACADEMY</h5>
+          <p class="card-text text-center">Our 3 month modelling programme has been designed to give models more intensive training by offering a weekly training session over 3 months.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card wow">
+        <div id="card-img-header" class="rounded-top">
+          <img src="{% static 'pages/img/hostess.png' %}" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">HOSTESS</h5>
+          <p class="card-text text-center">Whether you are looking for a host with a classic or edgy look, all our models have a fine understanding of hospitality. We understand like no other the importance of a warm welcome and excellent service when creating an everlasting impression during events.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card wow">
+        <div id="card-img-header" class="rounded-top">
+          <img src="{% static 'pages/img/master-class.png' %}" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">MASTER CLASS</h5>
+          <p class="card-text text-center">We have designed a program that not only equips you with the tools to enter into the modeling industry but includes information about the business. This program is a rich resource for aspiring models that provides information, skills and a professional insider view to help guide you on your path.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+
+    <!--################################################### sucess modal -->
+    {% if sucess %}
+    <div id="sucess-myModal" class="sucess-modal">
+      <!-- Modal content -->
+      <div class="sucess-content border border-primary rounded">
+        <span class="sucess-close ">&times;</span>
+        <p class="text-center text-info">{{ sucess }}</p>
+      </div>
+    </div>
+    {% endif %}
+
+    {% endblock %}
+
+
+
+    {% block js %}
+    <!-- typed js -->
+    <script src='https://cdn.jsdelivr.net/npm/typed.js@2.0.9'></script>
+    <script src="{% static 'pages/js/services.js' %}"></script>
+    <script src="{% static 'pages/js/sucess_modal.js' %}"></script>
+    {% endblock %}

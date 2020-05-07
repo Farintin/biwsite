@@ -1,0 +1,158 @@
+html, body {
+        background-color: #fafcfd;
+        height: 100%;
+      }
+
+      @media (max-width: 567.99px) {
+        #video-con {
+          height: 45%;
+        }
+
+        .my-row {
+          height: 100px;
+        }
+        .forw, .backw {
+          width: 30px;
+          padding: 27px 7px;
+          font-size: 25px;
+        }
+        .my-column {
+          width: 21.66%;
+        }
+      }
+      @media (min-width: 568px) and (max-width:998.99px) {
+        #video-con {
+          height: 50%;
+        }
+
+        .my-row {
+          height: 150px;
+        }
+        .forw, .backw {
+          width: 60px;
+          padding: 51px 19px;
+          font-size: 30px;
+        }
+        .my-column {
+          width: 25.66%;
+        }
+      }
+      @media (min-width: 999px) and (max-width: 1499.99px) {
+        #video-con {
+          height: 65%;
+        }
+
+        .my-row {
+          height: 200px;
+        }
+        .forw, .backw {
+          width: 60px;
+          padding: 70px 20px;
+          padding-bottom: 0px;
+          font-size: 40px;
+        }
+        .my-column {
+          width: 19.66%;
+        }
+      }
+      @media (min-width: 1500px) {
+        #video-con {
+          height: 75%;
+        }
+
+        .my-row {
+          height: 200px;
+        }
+        .forw, .backw {
+          width: 60px;
+          padding: 70px 20px;
+          padding-bottom: 0px;
+          font-size: 40px;
+        }
+        .my-column {
+          width: 18.66%;
+        }
+      }
+
+
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+      /* forward & backward buttons */
+      .forw,
+      .backw {
+        cursor: pointer;
+        height: 100%;
+        color: white;
+        background-color: #38b0f7;
+        font-weight: bold;
+        border-radius: 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      .backw {
+        float: left;
+      }
+      .forw {
+        float: right;
+        margin-left: auto;
+      }
+      .forw:hover,
+      .backw:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+
+      .my-row {
+        margin-left: 0;
+        margin-right: 0;
+        border-top: 2px solid #38b0f7;
+        border-bottom: 2px solid #38b0f7;
+        background-color: #707173;
+      }
+      .my-row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Six columns side by side */
+      .my-column {
+        float: left;
+        height: 100%;
+      }
+      .my-column img {
+        height: 100%;
+      }
+
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.5;
+      }
+      .demo:hover {
+        opacity: 1;
+      }

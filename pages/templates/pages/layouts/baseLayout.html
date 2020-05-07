@@ -1,0 +1,128 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{% static 'pages/css/bootstrap/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'pages/css/general.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="icon" type="image/ico" href="{% static 'pages/img/biw-logo-main.png' %}" />
+
+    <title>BIW</title>
+    
+    {% block css %}
+    {% endblock %}
+    
+  </head>
+
+  <body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+      <a id="logo" class="navbar-brand" href="#">
+        <img src="{% static 'pages/img/biw-logo-main.png' %}"><span>MODELS</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-1" >
+          <li class="nav-item ">
+            <a class="nav-link" href="/">Home </a>
+          </li>
+          <li class="nav-item {% if services_page %} active {% endif %}">
+            <a class="nav-link " href="/services" id="serv">Services <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle {% if photos_page %} active {% elif videos_page %} active {% endif %}" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gallery
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item {% if photos_page %} active {% endif %}" href="/photos">Photos</a>
+              <div class="border-top border-primary w-100 m-0 p-0"></div>
+              <a class="dropdown-item {% if videos_page %} active {% endif %}" href="/videos">Videos</a>
+            </div>
+          </li>
+          <li class="nav-item ml-lg-3 {% if about_page %} active {% endif %}">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item {% if contact_page %} active {% endif %}">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+
+        <a class="btn btn-outline-success my-auto {% if register_page %} active {% endif %}" href="/register">Join</a>
+      </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+    <!--######################################################################footer section-->
+    <footer>
+      <div class="container-fluid mother-container" >
+
+
+        <div class="container-fluid fhead " >
+          <h1 class="text-white" >Ready When You Are</h1>
+          <h6 >GET IN TOUCH</h6>
+        </div>
+        <div class="container-fluid media " >
+          <ul class="nav" >
+            <li class="nav-item">
+              <a class="nav-link" href="https://mobile.facebook.com/BIWmodela" style="padding: 0.5rem 1.05rem;"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link sec" href="https://www.instagram.com/biwmodels"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link third" href="https://www.messenger.com/t/BIWmodela"><i class="fab fa-facebook-messenger"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=beyondimaginationgang@gmail.com" style="padding: 0.5rem 0.87rem;"><i class="fas fa-at"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/channel/UCA5VT6QxQWwWmz4f-ie5EBg"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container-fluid links " >
+          <ul class="nav" >
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="padding-left: 0;">INDUSTRIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRIVATE POLICY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">@ 2019 THE BELLA'S-PROJECT@.LLC</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!--####################################################################################scripts section-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+    <script src="{% static 'pages/js/navbar.js' %}"></script>
+    <script>
+        new WOW().init();
+    </script>
+    {% block js %}
+    {% endblock %}
+  </body>
+</html>

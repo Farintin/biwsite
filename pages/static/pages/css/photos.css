@@ -1,0 +1,202 @@
+.grid-con {
+  padding: auto;
+}
+
+
+#gallery-container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:;
+  width: 100%;
+  height: ;
+  padding: 10px 0px 10px 0px;
+}
+
+.image-box1 {
+  margin: 3px;
+  height: ;
+}
+
+
+.image-box1 img {
+  height: 200px;
+}
+
+@media (max-width: 499.98px) {
+  #gallery-container1 {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .image-box1 {
+    max-width: 250px;
+  }
+  .image-box1 img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 550px) {
+  #gallery-container1 {
+    width: 80%;
+  }
+  .image-box1 {
+    max-width: 300px;
+  }
+  .image-box1 img {
+    width: ;
+    height: auto;
+  }
+}
+
+@media (min-width: 1500px) {
+  .main.container {
+    max-width: 92%;
+  }
+  #gallery-container1 {
+    padding: 50px 0px 50px 0px;
+  }
+  .image-box1 img {
+    height: 250px;
+  }
+}
+
+
+
+/* #######################3 image view stylings */
+#image-view-body {
+	background-color: #7a7e82;
+  height: 100%;
+}
+
+.image-view-bg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+  margin-top: 2%;
+}
+
+.image-view {
+  height: 100%;
+  max-width: 90%;
+  box-shadow: -15px 20px 12px 5px rgba(0, 0, 0, 0.4), -30px 40px 24px 10px rgba(40, 40, 40, 0.3);
+}
+
+@media (max-width: 1199.99px) {
+  .image-view-bg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image-view {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-shadow: -15px 20px 12px 5px rgba(0, 0, 0, 0.4), -30px 40px 24px 10px rgba(40, 40, 40, 0.3);
+  }
+  .prev, .next {
+    top: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .prev, .next {
+    top: 50%;
+  }
+}
+
+
+/* back buttons */
+.back {
+  cursor: pointer;
+  position: fixed;
+  top: 5%;
+  width: auto;
+  margin-top: -22px;
+  padding: 8px 2px 8px 15px;
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: fixed;
+  width: auto;
+  margin-top: -22px;
+  padding: 20px;
+  color: white;
+  background-color: rgba(0,0,0,1);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(6,163,239,1);
+  color: white;
+  text-decoration: none;
+}
+
+.back:hover {
+  background-color: rgba(6,163,239,1);
+  color: white;
+  text-decoration: none;
+}
+
+#img-view-body a {
+	text-decoration: none;
+}
+
+/* Pagination */
+.pag-prev, .pag-next {
+  cursor: pointer;
+  position: fixed;
+  top: 41%;
+  width: auto;
+  padding: 5px 15px 15px 15px;
+  color: white;
+  background-color: rgba(6,163,239,1);
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+.pag-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.pag-prev:hover, .pag-next:hover {
+  background-color: rgba(0,0,0,1);
+  text-decoration: none;
+}

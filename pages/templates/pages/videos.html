@@ -1,0 +1,34 @@
+{% extends 'pages/layouts/baseLayout.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/videos.css' %}">
+{% endblock %}
+
+{% block content %}
+    <!--####################### main gallery interface -->
+    <div id="video-con" class="container-fluid px-0" >
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/g3Tb7An8Ggw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-100 h-100"></iframe>
+    </div>
+
+      <!-- Thumbnail images -->
+      <div class="my-row">
+        <a class="backw" >&#10094;</a>
+        <div class="my-column" style="border: 4px solid #38b0f7;">
+          <img class="cursor" src="https://i.ytimg.com/vi/g3Tb7An8Ggw/mqdefault.jpg" style="width:100%;" alt="The Woods">
+        </div>
+        <div class="my-column">
+          <img class="demo cursor" src="https://i.ytimg.com/vi/uTMwEh-zR14/mqdefault.jpg" style="width:100%" alt="Cinque Terre">
+        </div>
+        <a class="forw" >&#10095;</a>
+      </div>
+    </div>
+
+    <!-- Image text -->
+    <div style="width: 100%; height: 100px; background-color: #484a4e;"></div>
+{% endblock %}
+
+
+{% block js %}
+<script src="{% static 'pages/js/videos.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,178 @@
+@font-face {
+  font-family: slight-right;
+  src: url(font/ChaparralPro-Italic.otf);
+}
+
+
+
+main {
+  background-image: url('/static/pages/img/register-xl.jpg');
+  background-size: auto 100%;
+  background-position-x: center;
+  height: 100vh;
+}
+#bgColor {
+  background-color: rgba(83, 158, 241, 0.6);
+  height: 100%;
+}
+
+
+
+/*##########################  register sign up heading */
+.reg-header {
+  font-family: slight-right;
+}
+
+#bgColor form input {
+  height: 50px;
+}
+.reg-form-con {
+  border-radius: 10px; 
+  background-color: rgba(255,255,255,0.7); 
+  padding: 10% 3% 5% 3%; 
+}
+
+@media (min-width: 992px) {
+  .reg-header {
+    font-size: 120px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .reg-header {
+    font-size: 90px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .reg-header {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .reg-header {
+    font-size: 4rem;
+  }
+  #bgColor form input {
+    height: 40px;
+  }
+  .reg-form-con {
+    width: 80%;
+  }
+}
+
+
+
+@media (max-height: 768px) {
+  main {
+    height: 110vh;
+  }
+  #bgColor {
+    height: 110%;
+  }
+}
+@media (max-height: 668px) {
+  main {
+    height: 130vh;
+  }
+  #bgColor {
+    height: 130%;
+  }
+}
+@media (max-height: 598px) {
+  main {
+    height: 150vh;
+  }
+  #bgColor {
+    height: 150%;
+  }
+}
+@media (max-height: 512px) {
+  main {
+    height: 170vh;
+  }
+  #bgColor {
+    height: 170%;
+  }
+}
+
+
+
+
+/* The Modal (background) */
+.sucess-modal {
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 11; /* Sit on top */
+  left: 0;
+  top: 0;
+  padding-top: 10%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.sucess-content {
+  background-color: white;
+  margin: auto;
+  padding: 0px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 1s;
+}
+
+
+
+
+
+@media (max-width: 579.99px) {
+  .sucess-content {
+    width: 90%;
+  }
+}
+@media (min-width: 580px) and (max-width: 978.99px) {
+  .sucess-content {
+    width: 75%;
+  }
+}
+@media (min-width: 979px) {
+  .sucess-content {
+    width: 50%;
+  }
+}
+
+.sucess-content p {
+  width: 100%;
+}
+
+
+
+
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.sucess-close {
+  color: #aaaaaa;
+  font-size: 40px;
+  font-weight: lighter;
+  position: relative;
+  top: 10px;
+  left: 98%;
+  line-height: 0px;
+}
+
+.sucess-close:hover,
+.sucess-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+{% extends 'pages/layouts/baseLayout.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/photos.css' %}">
+{% endblock %}
+
+{% block content %}
+    <!--####################### main gallery interface -->
+
+    <div class="main container mt-5 pt-3">
+      <div id="gallery-container1" class="my-5">
+        {% for photo in photos %}
+        <div class="image-box1">
+          <a href="photos/{{ photo }}">
+            <img src="{% static 'pages/img/photos/thumbnails/' %}{{ photo }}">
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+  <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+{% endblock %}

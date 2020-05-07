@@ -1,0 +1,68 @@
+{% extends 'pages/layouts/baseLayout.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1 class="display-4 text-center blue mt-5">About Us</h1>
+    <h1 class="display-4 text-center header2 mt-4">Beyond Imagination World Modeling Agency</h1>
+    <div class="container px-md-5">
+      <p class="text-center text-justify mx-md-3 px-md-3 lead" style="font-size: 1.1rem;">The mission of BIW MODELS Academy is to TRANSFORM THE LIVES of young African Aspiring/established  model To  educate, inform, motivate, train and prepare Black males/females , grooming them into exceptional individuals, role models and leaders.</p>
+    </div>
+
+
+
+    <div class="container my-5">
+
+      <div class="row p-5">
+        <div class="col-lg-6 order-2 order-lg-1 wow left-right">
+          <h1 class="lead font-weight-bolder text-center blue text-sm-left my-3">CORE BELIEFS</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col px-0">
+                <p class="text-justify"><i class="fas fa-square text-primary mr-2"></i>BIW MODELS Academy believes that there is an abundance of talented young NIGERIA'S  in our community.</p>
+              </div>
+              <div class="w-100"></div>
+              <div class="col px-0">
+                <p class="text-justify"><i class="fas fa-square text-primary mr-2"></i>BIW MODELS Academy will support and work with them to achieve personal, social and academic success.</p>
+              </div>
+              <div class="w-100"></div>
+              <div class="col px-0">
+                <p class="text-justify"><i class="fas fa-square text-primary mr-2"></i>BIW MODELS Academy is committed to identifying and working with young Aspiring  models by providing them with co-curricular learning experiences to equip them with the skills necessary for their development .</p>
+              </div>
+              <div class="w-100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 wow right-left"><div class="container"><img class="w-100 rounded " src="{% static 'pages/img/about/714A2286-2.jpg' %}"></div></div>
+      </div>
+
+      <div class="row p-5">
+        <div class="col-lg-6 wow left-right"><div class="container w-75"><img class="w-100 rounded float-sm-right" src="{% static 'pages/img/about/714A2315-1.jpg' %}"></div></div>
+        <div class="col-lg-6 wow right-left">
+          <h1 class="lead font-weight-bolder text-center blue text-sm-left my-3">PROGRAM EMPHASES </h3>
+          <p class="text-justify">Coach, mentor, and direct African MODELS participants along paths of self-exploration, improvement, and development, resulting in discoveries of creativity and a desire to excel.</p>
+        </div>
+      </div>
+
+      <div class="row p-5">
+        <div class="col-lg-6 order-2 order-lg-1 wow left-right">
+          <h1 class="lead font-weight-bolder text-center blue text-sm-left my-3">CURRICULUM </h3>
+          <p class="text-justify ">BIW MODELS Academy is for SERIOUS individuals only.
+We are looking for individuals who are committed to:</p>
+
+            <p><i class="fas fa-check text-primary mr-2"></i>Academic improvement</p>
+            <p><i class="fas fa-check text-primary mr-2"></i>Attending program sessions</p>
+            <p><i class="fas fa-check text-primary mr-2"></i>Actively participating</p>
+            <p><i class="fas fa-check text-primary mr-2"></i>Helping others</p>
+            <p><i class="fas fa-check text-primary mr-2"></i>Learning new behaviors and life skills</p>
+            <p><i class="fas fa-check text-primary mr-2"></i>And becoming the absolute best he can be!</p>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 wow right-left"><div class="container"><img class="w-100 rounded " src="{% static 'pages/img/about/714A2336-2.jpg' %}"></div></div>
+      </div>
+    </div>
+
+  <!-- End About area -->
+  {% endblock %}

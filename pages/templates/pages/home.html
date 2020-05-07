@@ -1,0 +1,232 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{% static 'pages/css/bootstrap/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'pages/css/general.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="icon" type="image/ico" href="{% static 'pages/img/biw-logo-main.png' %}" />
+    <link rel="stylesheet" href="{% static 'pages/css/home.css' %}">
+
+    <title>BIW</title>
+
+    <style>
+      /* The about event Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 999; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+
+      /* about event Modal Content/Box */
+      .modal-content {
+        background-color: #fefefe;
+        margin: 1% auto;
+        padding: 10px 20px;
+        border: 4px solid #2989f7;
+        width: 85%;
+        max-width: 1536px;
+      }
+      #videoModal .modal-content {
+        padding: 0;
+        height: 90%;
+        background-color: #000;
+      }
+      @media (max-width: 575.99px) {
+        .modal-content {
+          padding: 10px 10px;
+          border: 2px solid #2989f7;
+          width: 98%;
+        }
+        .modal-content h3 {
+          font-size: 1.5rem;
+        }
+      }
+
+
+
+
+      /* The about event Close Button */
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        position: relative;
+        right: -92%;
+        width: 30px;
+        text-align: center;
+      }
+      @media (min-width: 576px) {
+        .close {
+          right: -97%;
+        }
+      }
+
+      .close:hover, .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+
+
+
+      /* about event gender icons */
+      .fa-female, .fa-male {
+        color: #3d92ec;
+        font-size: 100px
+      }
+
+      /* the about event muted header part(join biw-models) */
+      #join-biw-models {
+        color: #5ba1ea;
+      }
+    </style>
+    
+  </head>
+  <body id="home">
+
+    <div id="main">
+    <!--###################################################################################navbar1 section-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-transparent border-0">
+
+        <a id="logo" class="navbar-brand p-0 mr-0" href="">
+          <img src="{% static 'pages/img/biw-logo-main.png' %}"><span>MODELS</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="/services" id="serv">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gallery
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/photos">Photos</a>
+                <div class="border-top border-primary w-100 m-0 p-0"></div>
+                <a class="dropdown-item" href="/videos">Videos</a>
+              </div>
+
+            </li>
+            <li class="nav-item ml-lg-3">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/contact">Contact</a>
+            </li>
+
+          </ul>
+          <a class="btn btn-outline-success" href="/register">Join</a>
+
+        </div>
+
+      </nav>
+      <main>
+
+        <h1 class="text-white font-weight-bolder text-uppercase text-center display-4">
+          <span class="pr-2 text-white">BIW</span>
+          <br>
+          <span class="pr-1">Model</span>
+          Academy
+        </h1>
+
+        <p id="addr" class="my-2 pb-0 text-center font-weight-bolder text-light">Kings plaza, 11b Benjamin Opara street off Olu Obasanjo road, Port Harcourt.</p>
+
+        <a href="#https://www.nairaland.com/5177055/bim-model-academy-launch-records" class="venobox play-btn mb-2 mx-auto" data-vbtype="video"
+          data-autoplay="true"></a>
+
+        <p class="text-center pb-0 mb-0"><a href="#" class="about-btn scrollto ">About The Event</a></p>
+
+      </main>
+
+    </div>
+    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+    <!-- Modals -->
+
+    <!-- The About Modal -->
+    <div id="aboutModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 class="text-center font-weight-normal">Do you have what it takes to <small id="join-biw-models" style="/*color: #5ba1ea;">join BIWModels?</small></h3>
+        <p class="text-center mb-5 lead mt-3">To Participate:</p>
+        <div class="container">
+          <div class="row">
+            <div class="col px-0 px-sm-3">
+              <p class="text-center"><i class="fas fa-female" style="/*font-size: 100px; color: #3d92ec;"></i></p>
+              <div class="container mx-auto w-auto pr-0 px-sm-3">
+                <div class="row justify-content-center">
+                  <div class="col-sm-7 ml-sm-5">
+                    <p><i class="fas fa-check text-primary mr-2"></i>Between the ages of 15– 30</p>
+                    <p><i class="fas fa-check text-primary mr-2"></i>Height 5’9 and above</p>
+                    <p><i class="fas fa-check text-primary mr-2"></i>Do you have a special unique striking feature?</p>
+                    <p><i class="fas fa-check text-primary mr-2"></i>Clear skin</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col px-0 px-sm-3">
+              <p class="text-center"><i class="fas fa-male" style="/*font-size: 100px; color: #3d92ec;"></i></p>
+              <div class="container mx-auto w-auto pr-0 px-sm-3">
+                <div class="row justify-content-center">
+                  <div class="col-sm-7 ml-sm-5">
+                    <p><i class="fas fa-check text-primary mr-2"></i>Between the ages of 15– 25</p>
+                    <p><i class="fas fa-check text-primary mr-2"></i>Height Between 6ft - 6’3</p>
+                    <p><i class="fas fa-check text-primary mr-2"></i>Clear skin </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- The Video Modal -->
+    <div id="videoModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uTMwEh-zR14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-100 h-100">Your browser does not support HTML5 video.</iframe>
+        
+      </div>
+
+    </div>
+    
+
+
+
+    <!--####################################################################################scripts section-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="{% static 'pages/js/home.js' %}"></script>
+
+    </body>
+    </html>

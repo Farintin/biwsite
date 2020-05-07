@@ -1,0 +1,106 @@
+{% extends 'pages/layouts/baseLayout.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/contact.css' %}">
+{% endblock %}
+
+
+
+    {% block content %}
+    <!--################################### main -->
+    <div id="parallax1">
+      <h1>Contant Us</h1>
+      <div class="para-logo">
+        <img src="{% static 'pages/img/biw-logo-main.png' %}">
+      </div>
+      <div id="arrows">
+        <i id="arrow1" class="fas fa-long-arrow-alt-down"></i>
+        <i id="arrow2" class="fas fa-long-arrow-alt-down"></i>
+      </div>
+    </div>
+
+    <div id="contact-div1" class="contact-divs">
+      <h2 class="wow right-left">We'd love to hear from you</h2>
+      <form method="post" class="wow left-right">
+        {% csrf_token %}
+        <input id="id_name" type="text" name="name" placeholder="Your Name" required>
+        <br>
+        <input id="id_email" type="email" name="email" placeholder="Your email" required>
+        <br>
+        <input id="id_subject" type="text" name="subject" placeholder="Subject" required>
+        <br>
+        <textarea id="id_message" name="message" placeholder="Message"></textarea>
+        <button>Send Message</button>
+      </form>
+    </div>
+
+    <div id="parallax2">
+      <div class="para-logo">
+        <img src="{% static 'pages/img/biw-logo-main.png' %}">
+      </div>
+    </div>
+
+    <div id="contact-div2" class="contact-divs">
+      <h1 class="wow left-right">GET IN TOUCH !</h1>
+      <div class="media-con wow right-left">
+        <a href="https://www.messenger.com/t/BIWmodela">
+          <img src="{% static 'pages/img/contact/messenger.png' %}">
+        </a>
+        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=beyondimaginationgang@gmail.com">
+          <img src="{% static 'pages/img/contact/gmail.png' %}">
+        </a>
+      </div>
+    </div>
+
+    <div id="parallax3">
+      <div class="para-logo">
+        <img src="{% static 'pages/img/biw-logo-main.png' %}">
+      </div>
+    </div>
+
+    <div id="contact-div3" class="contact-divs">
+      <div class="media-con wow left-right">
+        <a href="https://mobile.facebook.com/BIWmodela">
+          <img src="{% static 'pages/img/contact/facebook1.png' %}">
+        </a>
+        <a href="https://www.instagram.com/biwmodels">
+          <img src="{% static 'pages/img/contact/instagram.png' %}">
+        </a>
+        <a href="https://www.youtube.com/channel/UCA5VT6QxQWwWmz4f-ie5EBg">
+          <img src="{% static 'pages/img/contact/youtube1.png' %}">
+        </a>
+      </div>
+      <h1 class="wow right-left">Follow <span>and </span><span id="sub">Subscribe</span></h1>
+    </div>
+
+    <div id="parallax1" style="height: 110%;">
+      <div class="para-logo">
+        <img src="{% static 'pages/img/biw-logo-main.png' %}">
+      </div>
+    </div>
+
+    <div class="bg-text">
+      <img src="{% static 'pages/img/biw-logo-main.png' %}">
+    </div>
+    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+    <!--################################################### sucess modal-->
+    {% if success %}
+    <div id="sucess-myModal" class="sucess-modal">
+      <!-- Modal content -->
+      <div class="sucess-content border border-primary rounded">
+        <span class="sucess-close ">&times;</span>
+        <p id="sucess-msg" class="text-info text-center">{{ success }}</p>
+      </div>
+    </div>
+    {% endif %}
+    <!--
+    $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+    {% endblock %}
+
+    <!--####################################################################################scripts section-->
+    {% block js %}
+    <script src="{% static 'pages/js/sucess_modal.js' %}"></script>
+    {% endblock %}
+

@@ -1,0 +1,534 @@
+body, html {
+  height: 100%;
+}
+
+#parallax1 {
+  /* The image used */
+  background-image: url('/static/pages/img/contact/slider3.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax1 h1 {
+  position: relative;
+  top: 60%;
+  font-size: 52px;
+  color: #edf8ff;
+  text-align: center;
+}
+
+#arrows {
+  position: relative;
+  top: 60vh;
+  animation: bounce 2.5s infinite;
+}
+@keyframes bounce {
+  from {
+    top: 45vh;
+  }
+  50% {
+    top: 60vh;
+  }
+  to {
+    top: 45vh;
+  }
+}
+
+#arrows i {
+  font-size: 130px;
+  color: #edf8ff;
+  margin: 0 90px;
+}
+#arrow2 {
+  float: right;
+}
+
+#parallax2 {
+  /* The image used */
+  background-image: url('/static/pages/img/contact/slider1.jpg');
+
+  /* Full height */
+  min-height: 40%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax3 {
+  /* The image used */
+  background-image: url('/static/pages/img/contact/subscribe-bg.jpg');
+
+  /* Full height */
+  min-height: 40%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.para-logo {
+  width: 200px;
+  margin: 0px auto;
+  position: relative;
+  display: none;
+}
+.para-logo img {
+  width: 100%;
+}
+
+#parallax2 .para-logo, #parallax3 .para-logo {
+  top: 60px;
+}
+
+
+.contact-divs {
+  background-color: #343a40;
+  padding: 20px 0;
+}
+#contact-div1 form {
+  height: auto;
+  background-color: #fff;
+  border-radius: 60px 0;
+  border-width: 3px 0;
+  border-color: #1788cc;
+  border-style: solid;
+  padding: 13px;
+}
+#contact-div1 h2 {
+  font-size: 40px;
+  color: #edf8ff;
+  float: right;
+  margin: 120px 40px 0px 0px;
+  padding: 0 10px;
+  text-align: center;
+}
+#contact-div1 input, #contact-div1 #id_message, #contact-div1 button {
+  width: 100%;
+  outline: none;
+  background: #f1f1f3;
+}
+#contact-div1 input, #contact-div1 #id_message {
+  padding: 5px 20px;
+  font-size: 15px;
+}
+#id_name {
+  height: 45px;
+  border-radius: 40px 0 0 0;
+  border: 3px solid #f5f6f8;
+  border-width: 0 2px 0 0;
+}
+#id_email, #id_subject {
+  height: 45px;
+  margin-top: 10px;
+  border: 3px solid #f5f6f8;
+  border-width: 0 2px;
+}
+#contact-div1 #id_message {
+  height: 200px;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: #f5f6f8;
+  border-width: 0 2px;
+}
+#contact-div1 #id_message:hover, #contact-div1 #id_message:focus {
+  border-color: #1788cc;
+}
+#id_name:hover, #id_email:hover, #id_subject:hover, #id_name:focus #id_email:focus, #id_subject:focus {
+  border-color: #1788cc;
+}
+#contact-div1 button {
+  height: 45px;
+  border-radius: 0 0 40px 0;
+  background-color: #1788cc;
+  margin-top: 10px;
+  color: #f5f9fa;
+  font-size: 17px;
+  border: 3px solid #1788cc;
+  border-width: 0 0 0 2px;
+}
+#contact-div1 button:hover, #contact-div1 button:focus {
+  background-color: #f5f6f8;
+  color: #1788cc;
+  font-size: 15px;
+  outline: none;
+}
+
+
+
+
+
+/****************************************** contact section 2 *******************/
+#contact-div2 {
+  padding: 20px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 180px;
+}
+
+
+
+#contact-div2 h1 {
+  font-size: 30px;
+  color: #6ccaff;
+  margin-bottom: 0;
+}
+
+
+
+#contact-div2 .media-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 230px;
+}
+
+
+
+
+
+
+
+
+/****************************************** contact section 3 *******************/
+#contact-div3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+#contact-div3 .media-con {
+  width: 250px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact-div3 h1 {
+  width: 180px;
+  text-align: center;
+  margin-bottom: 0;
+
+  font-size: 40px;
+  color: #3d5a98;
+}
+#contact-div3 h1 span {
+  color: #f1f1f1;
+}
+#contact-div3 h1 #sub {
+  color: #de0202;
+}
+
+
+
+
+#contact-div2 .media-con a img:hover {
+  width: 80px;
+}
+#contact-div3 .media-con a img:hover {
+  width: 65px;
+}
+
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  position: fixed; /* Stay fixed */
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+}
+.bg-text img {
+  width: 100%;
+}
+
+
+
+
+
+@media (max-width: 300px) {
+  #parallax1 h1 {
+    top: 70px;
+    font-size: 40px;
+  }
+
+
+
+  .para-logo {
+    top:70px;
+    width: 130px;
+  }
+
+
+
+  #contact-div1 form {
+    width: 90%;
+  }
+  #contact-div1 h2 {
+    font-size: 30px;
+  }
+
+
+
+  #contact-div2 .media-con img {
+    width: 50px;
+  }
+  #contact-div2 .media-con a img:hover {
+    width: 60px;
+  }
+
+
+
+  #contact-div3 .media-con {
+    margin-bottom: 0;
+    height: 60px;
+    align-items: start;
+  }
+  #contact-div3 .media-con img {
+    width: 30px;
+  }
+  #contact-div3 .media-con a img:hover {
+    width: 35px;
+  }
+
+
+
+  #contact-div2 .media-con, #contact-div3 .media-con {
+    justify-content: space-around;
+    width: 100%;
+  }
+  #contact-div2 h1, #contact-div3 h1 {
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 300px) {
+  .para-logo {
+    top: -20%;
+  }
+
+
+  #contact-div1 form {
+    width: 80%;
+  }
+
+
+  #contact-div2 .media-con a img {
+    width: 70px;
+  }
+  #contact-div3 .media-con a img {
+    width: 60px;
+  }
+}
+@media (min-width: 300px) and (max-width: 580px) {
+  #contact-div3 .media-con {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 580px) {
+  #contact-div2, #contact-div3 {
+    flex-direction: column;
+    height: auto;
+  }
+  #contact-div2 h1 {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 580px) {
+    #contact-div1 form {
+      width: 350px;
+    }
+}
+@media (max-width: 850px) {
+  .para-logo {
+    display: block;
+  }
+
+
+
+  .bg-text {
+    display: none;
+  }
+
+
+
+  #arrows i {
+    display: none;
+  }
+
+
+
+  #contact-div1 form {
+    margin: 20px auto;
+  }
+  #id_name {
+    font-size: 40px;
+  }
+  #contact-div1 h2 {
+    float: none;
+    margin: 5px auto;
+  }
+
+
+
+  #parallax1 {
+    height: 50%;
+  }
+
+
+
+  #contact-div2, #contact-div3 {
+    padding: 16px;
+  }
+}
+@media (min-width: 850px) {
+  #parallax1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width:850px) and (max-width: 1030px) {
+  .bg-text {
+    width: 200px;
+  }
+
+
+
+  #contact-div1 form {
+    margin-left: 20px;
+  }
+  #contact-div1 button {
+    height: 40px;
+  }
+  #contact-div1 h2 {
+    width: 300px;
+    font-size: 35px;
+  }
+
+
+
+  #contact-div2 h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 850px) and (max-width: 1350px) {
+  #contact-div1 form {
+    width: 300px;
+    margin-left: 30px;
+  }
+  #contact-div1 h2 {
+    width: 370px;
+    margin-right: 0px;
+    font-size: 40px;
+  }
+}
+@media (min-width: 1350px) {
+  #contact-div1 h2 {
+    width: 440px;
+  }
+
+  #contact-div1 form {
+    margin-left: 120px;
+  }
+
+
+
+  #contact-div2, #contact-div3 {
+    padding: 20px 15%;
+  }
+}
+
+
+
+/* The Modal (background) */
+.sucess-modal {
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 11; /* Sit on top */
+  left: 0;
+  top: 0;
+  padding-top: 10%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.sucess-content {
+  background-color: white;
+  margin: auto;
+  padding: 0px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 1s;
+}
+
+
+
+
+
+@media (max-width: 579.99px) {
+  .sucess-content {
+    width: 90%;
+  }
+}
+@media (min-width: 580px) and (max-width: 978.99px) {
+  .sucess-content {
+    width: 75%;
+  }
+}
+@media (min-width: 979px) {
+  .sucess-content {
+    width: 50%;
+  }
+}
+
+.sucess-content p {
+  width: 100%;
+}
+
+
+
+
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.sucess-close {
+  color: #aaaaaa;
+  font-size: 40px;
+  font-weight: lighter;
+  position: relative;
+  top: 10px;
+  left: 98%;
+  line-height: 0px;
+}
+
+.sucess-close:hover,
+.sucess-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
